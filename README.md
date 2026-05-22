@@ -1,16 +1,53 @@
-## Hi there 👋
+<h1 align="center">Hi, I'm Oshada</h1>
+<h3 align="center">Front-End Developer | Student | Tech Enthusiast</h3>
 
-<!--
-**Oshadashashinidu/Oshadashashinidu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+---
 
-Here are some ideas to get you started:
+###  About Me
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+-  I’m currently working on web development projects  
+-  I’m currently learning JavaScript, React, and UI/UX  
+-  Ask me about HTML, CSS, JavaScript  
+-  Contact me: your_email@example.com  
+-  Fun fact: I love building clean and modern websites  
+
+---
+
+###  Technologies I Use
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,python,java,git,github,vscode" />
+</p>
+
+---
+
+###  GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Oshadashashinidu&show_icons=true&theme=tokyonight&hide_border=true" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Oshadashashinidu&layout=compact&theme=tokyonight&hide_border=true" />
+</p>
+
+---
+
+###  GitHub Streak
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=Oshadashashinidu&theme=tokyonight&hide_border=true" />
+</p>
+
+---
+
+###  Connect With Me
+
+<p align="left">
+  <a href="https://www.linkedin.com/in/YOUR_LINKEDIN">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin" />
+  </a>
+  <a href="mailto:your_email@example.com">
+    <img src="https://img.shields.io/badge/Email-red?style=for-the-badge&logo=gmail" />
+  </a>
+</p>
