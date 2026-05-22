@@ -8,7 +8,7 @@
 -  I’m currently working on web development projects  
 -  I’m currently learning JavaScript, React, and UI/UX  
 -  Ask me about HTML, CSS, JavaScript  
--  Contact me: your_email@example.com  
+-  Contact me: oshadashashinidu2002@gmail.com  
 -  Fun fact: I love building clean and modern websites  
 
 ---
@@ -47,7 +47,7 @@
   <a href="https://www.linkedin.com/in/YOUR_LINKEDIN">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin" />
   </a>
-  <a href="mailto:your_email@example.com">
+  <a href="mailto:oshadashashinidu2002@gmail.com">
     <img src="https://img.shields.io/badge/Email-red?style=for-the-badge&logo=gmail" />
   </a>
 </p>
