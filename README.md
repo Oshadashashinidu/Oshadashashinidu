@@ -21,12 +21,6 @@
 
 ---
 
-### Top Languages Used
-
-<p align="center">
-  <img src="https://img.shields.io/badge/JavaScript-100%25-yellow?style=for-the-badge&logo=javascript&logoColor=white" />
-</p>
-
 ### GitHub Stats
 
 <p align="center">
