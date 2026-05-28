@@ -25,21 +25,40 @@
 
 ---
 
+---
+
 ### GitHub Stats
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Oshadashashinidu&theme=tokyonight" alt="GitHub Profile Summary" />
+  <img 
+    src="https://github-readme-stats.vercel.app/api?username=Oshadashashinidu&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&number_format=long" 
+    alt="Oshada's GitHub Stats" 
+  />
 </p>
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Oshadashashinidu&theme=tokyonight" alt="Top Languages by Repo" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Oshadashashinidu&theme=tokyonight" alt="GitHub Stats" />
+  <img 
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Oshadashashinidu&layout=compact&theme=tokyonight&hide_border=true" 
+    alt="Top Languages" 
+  />
 </p>
 
-###  GitHub Streak
+<p align="center">
+  <img 
+    src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Oshadashashinidu&theme=tokyonight" 
+    alt="GitHub Profile Summary" 
+  />
+</p>
+
+---
+
+### GitHub Streak
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=Oshadashashinidu&theme=tokyonight&hide_border=true" />
+  <img 
+    src="https://streak-stats.demolab.com?user=Oshadashashinidu&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" 
+    alt="GitHub Streak" 
+  />
 </p>
 
 ---
