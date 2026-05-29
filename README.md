@@ -3,7 +3,17 @@
 </p>
 
 <h1 align="center">Hi, I'm Oshada</h1>
-<h3 align="center">Computer Engineering Undergraduate at University of Peradeniya | Full-Stack Developer | Tech Enthusiast</h3>
+
+<h3 align="center">
+  Computer Engineering Undergraduate at University of Peradeniya | Full-Stack Developer | Tech Enthusiast
+</h3>
+
+<p align="center">
+  <img 
+    src="https://komarev.com/ghpvc/?username=Oshadashashinidu&label=Profile%20Visitors&color=blueviolet&style=for-the-badge" 
+    alt="Profile Visitors" 
+  />
+</p>
 
 ---
 
@@ -20,48 +30,23 @@
 ### Technologies I Use
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=html,css,js,react,python,java,git,github,vscode" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,python,java,git,github,vscode" alt="Technologies" />
 </p>
 
 ---
 
-### GitHub Contributions
+### GitHub Activity Graph
 
 <p align="center">
   <img 
-    src="https://streak-stats.demolab.com?user=Oshadashashinidu&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" 
-    alt="Oshada's GitHub Total Contributions and Streak" 
-  />
-</p>
-
----
-
-### Year-Wise GitHub Stats
-
-<p align="center">
-  <img 
-    src="https://github-readme-stats.vercel.app/api?username=Oshadashashinidu&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&commits_year=2026" 
-    alt="Oshada's 2026 GitHub Stats" 
-  />
-</p>
-
-<p align="center">
-  <img 
-    src="https://github-readme-stats.vercel.app/api?username=Oshadashashinidu&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&commits_year=2025" 
-    alt="Oshada's 2025 GitHub Stats" 
-  />
-</p>
-
-<p align="center">
-  <img 
-    src="https://github-readme-stats.vercel.app/api?username=Oshadashashinidu&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&commits_year=2024" 
-    alt="Oshada's 2024 GitHub Stats" 
+    src="https://github-readme-activity-graph.vercel.app/graph?username=Oshadashashinidu&theme=tokyo-night&hide_border=true" 
+    alt="Oshada's GitHub Activity Graph" 
   />
 </p>
 
 ---
 
-### Languages
+### Top Languages
 
 <p align="center">
   <img 
@@ -78,13 +63,6 @@
   <img 
     src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Oshadashashinidu&theme=tokyonight" 
     alt="GitHub Profile Summary" 
-  />
-</p>
-
-<p align="center">
-  <img 
-    src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Oshadashashinidu&theme=tokyonight" 
-    alt="GitHub Summary Stats" 
   />
 </p>
 
