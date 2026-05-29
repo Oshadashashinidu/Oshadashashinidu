@@ -7,17 +7,17 @@
 
 ---
 
-###  About Me
+### About Me
 
--  I’m currently working on web development projects  
--  I’m currently learning JavaScript, React, and UI/UX  
--  Ask me about HTML, CSS, JavaScript  
--  Contact me: oshadashashinidu2002@gmail.com  
--  Fun fact: I love building clean and modern websites  
+- I’m currently working on web development projects  
+- I’m currently learning JavaScript, React, and UI/UX  
+- Ask me about HTML, CSS, JavaScript  
+- Contact me: oshadashashinidu2002@gmail.com  
+- Fun fact: I love building clean and modern websites  
 
 ---
 
-###  Technologies I Use
+### Technologies I Use
 
 <p align="left">
   <img src="https://skillicons.dev/icons?i=html,css,js,react,python,java,git,github,vscode" />
@@ -25,16 +25,43 @@
 
 ---
 
----
-
-### GitHub Stats
+### GitHub Contributions
 
 <p align="center">
   <img 
-    src="https://github-readme-stats.vercel.app/api?username=Oshadashashinidu&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&number_format=long" 
-    alt="Oshada's GitHub Stats" 
+    src="https://streak-stats.demolab.com?user=Oshadashashinidu&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" 
+    alt="Oshada's GitHub Total Contributions and Streak" 
   />
 </p>
+
+---
+
+### Year-Wise GitHub Stats
+
+<p align="center">
+  <img 
+    src="https://github-readme-stats.vercel.app/api?username=Oshadashashinidu&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&commits_year=2026" 
+    alt="Oshada's 2026 GitHub Stats" 
+  />
+</p>
+
+<p align="center">
+  <img 
+    src="https://github-readme-stats.vercel.app/api?username=Oshadashashinidu&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&commits_year=2025" 
+    alt="Oshada's 2025 GitHub Stats" 
+  />
+</p>
+
+<p align="center">
+  <img 
+    src="https://github-readme-stats.vercel.app/api?username=Oshadashashinidu&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&commits_year=2024" 
+    alt="Oshada's 2024 GitHub Stats" 
+  />
+</p>
+
+---
+
+### Languages
 
 <p align="center">
   <img 
@@ -43,6 +70,10 @@
   />
 </p>
 
+---
+
+### GitHub Profile Summary
+
 <p align="center">
   <img 
     src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Oshadashashinidu&theme=tokyonight" 
@@ -50,26 +81,22 @@
   />
 </p>
 
----
-
-### GitHub Streak
-
 <p align="center">
   <img 
-    src="https://streak-stats.demolab.com?user=Oshadashashinidu&theme=tokyonight&hide_border=true&starting_year=2024&date_format=M%20j%5B%2C%20Y%5D&v=2" 
-    alt="GitHub Streak" 
+    src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Oshadashashinidu&theme=tokyonight" 
+    alt="GitHub Summary Stats" 
   />
 </p>
 
 ---
 
-###  Connect With Me
+### Connect With Me
 
 <p align="left">
-  <a href="https://www.linkedin.com/in/oshada-shashinidu-19b0b7333?utm_source=share_via&utm_content=profile&utm_medium=member_ios">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin" />
+  <a href="https://www.linkedin.com/in/oshada-shashinidu-19b0b7333">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn" />
   </a>
   <a href="mailto:oshadashashinidu2002@gmail.com">
-    <img src="https://img.shields.io/badge/Email-red?style=for-the-badge&logo=gmail" />
+    <img src="https://img.shields.io/badge/Email-red?style=for-the-badge&logo=gmail" alt="Email" />
   </a>
 </p>
