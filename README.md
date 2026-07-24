@@ -21,7 +21,7 @@
 
 - I’m currently working on web development projects  
 - I’m currently learning JavaScript, React, and UI/UX  
-- Ask me about HTML, CSS, JavaScript  
+- Ask me about HTML, CSS, and JavaScript  
 - Contact me: oshadashashinidu2002@gmail.com  
 - Fun fact: I love building clean and modern websites  
 
@@ -30,7 +30,10 @@
 ### Technologies I Use
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=html,css,js,react,python,java,git,github,vscode" alt="Technologies" />
+  <img 
+    src="https://skillicons.dev/icons?i=html,css,js,react,python,java,git,github,vscode" 
+    alt="Technologies" 
+  />
 </p>
 
 ---
@@ -57,24 +60,20 @@
 
 ---
 
-### GitHub Profile Summary
-
-<p align="center">
-  <img 
-    src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Oshadashashinidu&theme=tokyonight" 
-    alt="GitHub Profile Summary" 
-  />
-</p>
-
----
-
 ### Connect With Me
 
 <p align="left">
   <a href="https://www.linkedin.com/in/oshada-shashinidu-19b0b7333">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn" />
+    <img 
+      src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin" 
+      alt="LinkedIn" 
+    />
   </a>
+
   <a href="mailto:oshadashashinidu2002@gmail.com">
-    <img src="https://img.shields.io/badge/Email-red?style=for-the-badge&logo=gmail" alt="Email" />
+    <img 
+      src="https://img.shields.io/badge/Email-red?style=for-the-badge&logo=gmail" 
+      alt="Email" 
+    />
   </a>
 </p>
