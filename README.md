@@ -44,6 +44,21 @@
 
 ---
 
+### GitHub Contributions
+
+<p align="center">
+  <img
+    src="./profile/total-contributions.svg"
+    alt="Oshada's Total GitHub Contributions"
+  />
+</p>
+
+<p align="center">
+  Automatically updated every 6 hours using GitHub Actions
+</p>
+
+---
+
 ### GitHub Activity Graph
 
 <p align="center">
@@ -52,21 +67,6 @@
     alt="Oshada's GitHub Activity Graph"
     width="100%"
   />
-</p>
-
----
-
-### Complete GitHub Statistics
-
-<p align="center">
-  <img
-    src="./profile/github-stats.svg"
-    alt="Oshada's Complete GitHub Statistics"
-  />
-</p>
-
-<p align="center">
-  Automatically updated every 6 hours using GitHub Actions
 </p>
 
 ---
