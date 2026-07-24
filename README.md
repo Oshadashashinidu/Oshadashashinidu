@@ -27,9 +27,9 @@
 
 - I’m currently working on web development projects
 - I’m currently learning JavaScript, React, and UI/UX
-- Ask me about HTML, CSS, and JavaScript
+- Ask me about HTML, CSS, JavaScript, React, Python, and Java
 - Contact me: [oshadashashinidu2002@gmail.com](mailto:oshadashashinidu2002@gmail.com)
-- I enjoy building clean and modern websites
+- I enjoy building clean, modern, and user-friendly applications
 
 ---
 
@@ -56,6 +56,21 @@
 
 ---
 
+### Complete GitHub Statistics
+
+<p align="center">
+  <img
+    src="./profile/github-stats.svg"
+    alt="Oshada's Complete GitHub Statistics"
+  />
+</p>
+
+<p align="center">
+  Automatically updated every 6 hours using GitHub Actions
+</p>
+
+---
+
 ### Top Languages
 
 <p align="center">
@@ -63,21 +78,6 @@
     src="https://github-readme-stats.vercel.app/api/top-langs/?username=Oshadashashinidu&layout=compact&theme=tokyonight&hide_border=true"
     alt="Oshada's Top Programming Languages"
   />
-</p>
-
----
-
-### All-Time GitHub Commits
-
-<p align="center">
-  <img
-    src="./profile/all-time-commits.svg"
-    alt="Oshada's All-Time GitHub Commit Statistics"
-  />
-</p>
-
-<p align="center">
-  Automatically updated using GitHub Actions
 </p>
 
 ---
