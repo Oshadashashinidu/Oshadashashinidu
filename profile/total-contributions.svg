@@ -1,0 +1,101 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="650"
+  height="245"
+  viewBox="0 0 650 245"
+  role="img"
+  aria-label="Oshadashashinidu GitHub contribution statistics"
+>
+  <style>
+    .title {
+      font: 700 26px -apple-system, BlinkMacSystemFont,
+            "Segoe UI", Arial, sans-serif;
+      fill: #70a5fd;
+    }
+
+    .label {
+      font: 600 18px -apple-system, BlinkMacSystemFont,
+            "Segoe UI", Arial, sans-serif;
+      fill: #38bdae;
+    }
+
+    .number {
+      font: 700 22px -apple-system, BlinkMacSystemFont,
+            "Segoe UI", Arial, sans-serif;
+      fill: #bf91f3;
+    }
+
+    .footer {
+      font: 400 14px -apple-system, BlinkMacSystemFont,
+            "Segoe UI", Arial, sans-serif;
+      fill: #a9b1d6;
+    }
+  </style>
+
+  <rect
+    x="0"
+    y="0"
+    width="650"
+    height="245"
+    rx="10"
+    fill="#1a1b27"
+  />
+
+  <text
+    x="36"
+    y="52"
+    class="title"
+  >
+    GitHub Contribution Statistics
+  </text>
+
+  <text
+    x="36"
+    y="105"
+    class="label"
+  >
+    Total Contributions — All Time:
+  </text>
+
+  <text
+    x="565"
+    y="105"
+    text-anchor="end"
+    class="number"
+  >
+    142
+  </text>
+
+  <text
+    x="36"
+    y="153"
+    class="label"
+  >
+    Contributions — Last 12 Months:
+  </text>
+
+  <text
+    x="565"
+    y="153"
+    text-anchor="end"
+    class="number"
+  >
+    140
+  </text>
+
+  <line
+    x1="36"
+    y1="181"
+    x2="614"
+    y2="181"
+    stroke="#30363d"
+  />
+
+  <text
+    x="36"
+    y="215"
+    class="footer"
+  >
+    GitHub account contributions since 2024
+  </text>
+</svg>
