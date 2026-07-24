@@ -1,0 +1,42 @@
+name: Update All-Time GitHub Commits
+
+on:
+  # Automatically updates every 6 hours
+  schedule:
+    - cron: "0 */6 * * *"
+
+  # Allows you to run it manually
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v6
+
+      - name: Generate all-time commit card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=Oshadashashinidu&theme=tokyonight&hide_border=true&include_all_commits=true&number_format=long&hide=stars,prs,issues,contribs&hide_rank=true&custom_title=All-Time%20GitHub%20Commits
+          path: profile/all-time-commits.svg
+          token: ${{ secrets.GH_STATS_TOKEN }}
+
+      - name: Commit updated statistics
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add profile/all-time-commits.svg
+
+          if git diff --cached --quiet; then
+            echo "No statistics changes detected."
+          else
+            git commit -m "Update all-time GitHub commit statistics"
+            git push
+          fi
