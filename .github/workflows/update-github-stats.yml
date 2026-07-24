@@ -1,39 +1,321 @@
-name: Update GitHub Statistics
+name: Update Total GitHub Contributions
 
 on:
   schedule:
     - cron: "0 */6 * * *"
+
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  update-stats:
+  update-contributions:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout profile repository
         uses: actions/checkout@v4
 
-      - name: Generate complete GitHub statistics card
-        uses: readme-tools/github-readme-stats-action@v1
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          card: stats
-          options: username=Oshadashashinidu&theme=tokyonight&hide_border=true&include_all_commits=true&number_format=long&show_icons=true&show=reviews,discussions_started,discussions_answered,prs_merged&custom_title=All-Time%20GitHub%20Statistics
-          path: profile/github-stats.svg
-          token: ${{ secrets.GH_STATS_TOKEN }}
+          python-version: "3.12"
 
-      - name: Commit updated statistics
+      - name: Generate total contributions card
+        env:
+          GH_STATS_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
+          GITHUB_USERNAME: Oshadashashinidu
+        run: |
+          python <<'PY'
+          import html
+          import json
+          import os
+          import urllib.error
+          import urllib.request
+          from datetime import datetime, timedelta, timezone
+          from pathlib import Path
+
+          TOKEN = os.environ.get("GH_STATS_TOKEN")
+          USERNAME = os.environ.get("GITHUB_USERNAME")
+
+          if not TOKEN:
+              raise RuntimeError(
+                  "GH_STATS_TOKEN is missing. Add it under "
+                  "Settings > Secrets and variables > Actions."
+              )
+
+          if not USERNAME:
+              raise RuntimeError("GITHUB_USERNAME is missing.")
+
+          API_URL = "https://api.github.com/graphql"
+
+          def graphql(query, variables):
+              request_data = json.dumps({
+                  "query": query,
+                  "variables": variables
+              }).encode("utf-8")
+
+              request = urllib.request.Request(
+                  API_URL,
+                  data=request_data,
+                  headers={
+                      "Authorization": f"Bearer {TOKEN}",
+                      "Content-Type": "application/json",
+                      "User-Agent": "github-profile-contribution-card"
+                  },
+                  method="POST"
+              )
+
+              try:
+                  with urllib.request.urlopen(request) as response:
+                      result = json.loads(response.read().decode("utf-8"))
+              except urllib.error.HTTPError as error:
+                  body = error.read().decode("utf-8")
+                  raise RuntimeError(
+                      f"GitHub API request failed: {error.code}\n{body}"
+                  ) from error
+
+              if result.get("errors"):
+                  raise RuntimeError(
+                      "GitHub GraphQL errors:\n"
+                      + json.dumps(result["errors"], indent=2)
+                  )
+
+              return result["data"]
+
+          profile_query = """
+          query($login: String!) {
+            user(login: $login) {
+              createdAt
+
+              contributionsCollection {
+                contributionCalendar {
+                  totalContributions
+                }
+              }
+            }
+          }
+          """
+
+          profile_data = graphql(
+              profile_query,
+              {"login": USERNAME}
+          )
+
+          user = profile_data.get("user")
+
+          if not user:
+              raise RuntimeError(
+                  f"GitHub user '{USERNAME}' was not found."
+              )
+
+          created_at = datetime.fromisoformat(
+              user["createdAt"].replace("Z", "+00:00")
+          )
+
+          last_year_total = (
+              user["contributionsCollection"]
+              ["contributionCalendar"]
+              ["totalContributions"]
+          )
+
+          yearly_query = """
+          query(
+            $login: String!,
+            $from: DateTime!,
+            $to: DateTime!
+          ) {
+            user(login: $login) {
+              contributionsCollection(from: $from, to: $to) {
+                contributionCalendar {
+                  totalContributions
+                }
+              }
+            }
+          }
+          """
+
+          now = datetime.now(timezone.utc)
+          all_time_total = 0
+
+          for year in range(created_at.year, now.year + 1):
+              year_start = datetime(
+                  year, 1, 1, 0, 0, 0,
+                  tzinfo=timezone.utc
+              )
+
+              next_year = datetime(
+                  year + 1, 1, 1, 0, 0, 0,
+                  tzinfo=timezone.utc
+              )
+
+              start = max(created_at, year_start)
+              end = min(
+                  now,
+                  next_year - timedelta(seconds=1)
+              )
+
+              if start > end:
+                  continue
+
+              year_data = graphql(
+                  yearly_query,
+                  {
+                      "login": USERNAME,
+                      "from": start.isoformat().replace("+00:00", "Z"),
+                      "to": end.isoformat().replace("+00:00", "Z")
+                  }
+              )
+
+              yearly_total = (
+                  year_data["user"]
+                  ["contributionsCollection"]
+                  ["contributionCalendar"]
+                  ["totalContributions"]
+              )
+
+              print(f"{year}: {yearly_total} contributions")
+              all_time_total += yearly_total
+
+          safe_username = html.escape(USERNAME)
+
+          svg = f"""<svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="650"
+            height="245"
+            viewBox="0 0 650 245"
+            role="img"
+            aria-label="{safe_username} GitHub contribution statistics"
+          >
+            <style>
+              .title {{
+                font: 700 26px -apple-system, BlinkMacSystemFont,
+                      "Segoe UI", Arial, sans-serif;
+                fill: #70a5fd;
+              }}
+
+              .label {{
+                font: 600 18px -apple-system, BlinkMacSystemFont,
+                      "Segoe UI", Arial, sans-serif;
+                fill: #38bdae;
+              }}
+
+              .number {{
+                font: 700 22px -apple-system, BlinkMacSystemFont,
+                      "Segoe UI", Arial, sans-serif;
+                fill: #bf91f3;
+              }}
+
+              .footer {{
+                font: 400 14px -apple-system, BlinkMacSystemFont,
+                      "Segoe UI", Arial, sans-serif;
+                fill: #a9b1d6;
+              }}
+            </style>
+
+            <rect
+              x="0"
+              y="0"
+              width="650"
+              height="245"
+              rx="10"
+              fill="#1a1b27"
+            />
+
+            <text
+              x="36"
+              y="52"
+              class="title"
+            >
+              GitHub Contribution Statistics
+            </text>
+
+            <text
+              x="36"
+              y="105"
+              class="label"
+            >
+              Total Contributions — All Time:
+            </text>
+
+            <text
+              x="565"
+              y="105"
+              text-anchor="end"
+              class="number"
+            >
+              {all_time_total:,}
+            </text>
+
+            <text
+              x="36"
+              y="153"
+              class="label"
+            >
+              Contributions — Last 12 Months:
+            </text>
+
+            <text
+              x="565"
+              y="153"
+              text-anchor="end"
+              class="number"
+            >
+              {last_year_total:,}
+            </text>
+
+            <line
+              x1="36"
+              y1="181"
+              x2="614"
+              y2="181"
+              stroke="#30363d"
+            />
+
+            <text
+              x="36"
+              y="215"
+              class="footer"
+            >
+              GitHub account contributions since {created_at.year}
+            </text>
+          </svg>
+          """
+
+          output_path = Path(
+              "profile/total-contributions.svg"
+          )
+
+          output_path.parent.mkdir(
+              parents=True,
+              exist_ok=True
+          )
+
+          output_path.write_text(
+              svg,
+              encoding="utf-8"
+          )
+
+          print(
+              f"All-time contributions: {all_time_total}"
+          )
+
+          print(
+              f"Last 12 months: {last_year_total}"
+          )
+          PY
+
+      - name: Commit updated contribution card
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add profile/github-stats.svg
+          git add profile/total-contributions.svg
 
           if git diff --cached --quiet; then
-            echo "No statistics changes detected."
+            echo "No contribution changes detected."
           else
-            git commit -m "Update GitHub profile statistics"
+            git commit -m "Update total GitHub contributions"
             git push
           fi
