@@ -1,11 +1,8 @@
 name: Update All-Time GitHub Commits
 
 on:
-  # Automatically updates every 6 hours
   schedule:
     - cron: "0 */6 * * *"
-
-  # Allows you to run it manually
   workflow_dispatch:
 
 permissions:
@@ -26,6 +23,7 @@ jobs:
           options: username=Oshadashashinidu&theme=tokyonight&hide_border=true&include_all_commits=true&number_format=long&hide=stars,prs,issues,contribs&hide_rank=true&custom_title=All-Time%20GitHub%20Commits
           path: profile/all-time-commits.svg
           token: ${{ secrets.GH_STATS_TOKEN }}
+          fail_on_error: true
 
       - name: Commit updated statistics
         run: |
