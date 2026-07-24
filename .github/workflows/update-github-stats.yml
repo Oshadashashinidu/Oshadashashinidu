@@ -1,4 +1,4 @@
-name: Update All-Time GitHub Commits
+name: Update GitHub Statistics
 
 on:
   schedule:
@@ -14,27 +14,26 @@ jobs:
 
     steps:
       - name: Checkout profile repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
-      - name: Generate all-time commit card
-        uses: stats-organization/github-readme-stats-action@v2
+      - name: Generate complete GitHub statistics card
+        uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
-          options: username=Oshadashashinidu&theme=tokyonight&hide_border=true&include_all_commits=true&number_format=long&hide=stars,prs,issues,contribs&hide_rank=true&custom_title=All-Time%20GitHub%20Commits
-          path: profile/all-time-commits.svg
+          options: username=Oshadashashinidu&theme=tokyonight&hide_border=true&include_all_commits=true&number_format=long&show_icons=true&show=reviews,discussions_started,discussions_answered,prs_merged&custom_title=All-Time%20GitHub%20Statistics
+          path: profile/github-stats.svg
           token: ${{ secrets.GH_STATS_TOKEN }}
-          fail_on_error: true
 
       - name: Commit updated statistics
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add profile/all-time-commits.svg
+          git add profile/github-stats.svg
 
           if git diff --cached --quiet; then
             echo "No statistics changes detected."
           else
-            git commit -m "Update all-time GitHub commit statistics"
+            git commit -m "Update GitHub profile statistics"
             git push
           fi
