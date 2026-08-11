@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" role="img" aria-labelledby="title desc">
+  <title id="title">Oshada Shashinidu — Full-Stack Developer</title>
+  <desc id="desc">Animated neon developer banner for Oshada Shashinidu, a Computer Engineering undergraduate at the University of Peradeniya.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="460" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07101F"/>
+      <stop offset="0.5" stop-color="#0D1117"/>
+      <stop offset="1" stop-color="#110A21"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="55" y1="50" x2="1145" y2="410" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#20C5FF"/>
+      <stop offset="0.48" stop-color="#6366F1"/>
+      <stop offset="1" stop-color="#C084FC"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-90 0;90 0;-90 0" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="name" x1="68" y1="122" x2="640" y2="278" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0F6FC"/>
+      <stop offset="0.46" stop-color="#20C5FF"/>
+      <stop offset="1" stop-color="#A855F7"/>
+    </linearGradient>
+    <radialGradient id="cyanAura" cx="0" cy="0" r="1" gradientTransform="translate(155 70) rotate(45) scale(470 330)">
+      <stop stop-color="#0EA5E9" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#0EA5E9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="violetAura" cx="0" cy="0" r="1" gradientTransform="translate(1080 410) rotate(-135) scale(470 360)">
+      <stop stop-color="#7C3AED" stop-opacity="0.27"/>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#30363D" stroke-width="0.65" stroke-opacity="0.34"/>
+      <animateTransform attributeName="patternTransform" type="translate" values="0 0;36 36" dur="14s" repeatCount="indefinite"/>
+    </pattern>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <clipPath id="cardClip"><rect x="730" y="65" width="405" height="330" rx="22"/></clipPath>
+  </defs>
+
+  <rect x="1" y="1" width="1198" height="458" rx="30" fill="url(#bg)" stroke="url(#neon)" stroke-width="2"/>
+  <rect x="3" y="3" width="1194" height="454" rx="28" fill="url(#grid)"/>
+  <rect x="3" y="3" width="1194" height="454" rx="28" fill="url(#cyanAura)"/>
+  <rect x="3" y="3" width="1194" height="454" rx="28" fill="url(#violetAura)"/>
+  <rect x="7" y="7" width="1186" height="446" rx="24" fill="none" stroke="url(#neon)" stroke-width="1" stroke-dasharray="14 34" opacity="0.58">
+    <animate attributeName="stroke-dashoffset" values="0;-192" dur="6s" repeatCount="indefinite"/>
+  </rect>
+
+  <circle cx="1075" cy="62" r="72" fill="#7C3AED" opacity="0.09" filter="url(#soft)">
+    <animate attributeName="cx" values="1075;1025;1075" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="62;92;62" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="120" cy="405" r="88" fill="#20C5FF" opacity="0.07" filter="url(#soft)">
+    <animate attributeName="cx" values="120;180;120" dur="10s" repeatCount="indefinite"/>
+  </circle>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif">
+    <rect x="67" y="60" width="230" height="34" rx="17" fill="#161B22" stroke="#20C5FF" stroke-opacity="0.45"/>
+    <circle cx="87" cy="77" r="5" fill="#3FB950" filter="url(#glow)">
+      <animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="103" y="82" fill="#C9D1D9" font-family="Consolas, monospace" font-size="13" font-weight="700" letter-spacing="1.4">BUILDING &amp; LEARNING</text>
+
+    <text x="67" y="135" fill="#8B949E" font-family="Consolas, monospace" font-size="18" font-weight="700" letter-spacing="5">HELLO, I’M</text>
+    <text x="63" y="207" fill="url(#name)" font-size="65" font-weight="850" letter-spacing="1">OSHADA</text>
+    <text x="63" y="276" fill="url(#name)" font-size="65" font-weight="850" letter-spacing="1">SHASHINIDU</text>
+    <line x1="68" y1="296" x2="620" y2="296" stroke="url(#neon)" stroke-width="3" stroke-linecap="round" filter="url(#glow)">
+      <animate attributeName="x2" values="68;620;620" keyTimes="0;0.62;1" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0.75" keyTimes="0;0.35;1" dur="4s" repeatCount="indefinite"/>
+    </line>
+
+    <text x="68" y="331" fill="#C9D1D9" font-size="18" font-weight="600" letter-spacing="1.2">COMPUTER ENGINEERING</text>
+    <text x="68" y="359" fill="#8B949E" font-size="16">University of Peradeniya</text>
+
+    <g font-family="Consolas, monospace" font-size="13" font-weight="700">
+      <rect x="68" y="388" width="162" height="34" rx="10" fill="#0D2535" stroke="#20C5FF" stroke-opacity="0.45"/>
+      <text x="88" y="410" fill="#79C0FF">FULL-STACK DEV</text>
+      <rect x="244" y="388" width="112" height="34" rx="10" fill="#1B1537" stroke="#A855F7" stroke-opacity="0.5"/>
+      <text x="265" y="410" fill="#C084FC">UI / UX</text>
+      <rect x="370" y="388" width="174" height="34" rx="10" fill="#10251D" stroke="#3FB950" stroke-opacity="0.42"/>
+      <text x="391" y="410" fill="#7EE787">PROBLEM SOLVER</text>
+    </g>
+  </g>
+
+  <g opacity="0.42">
+    <ellipse cx="932" cy="230" rx="244" ry="185" fill="none" stroke="#7C3AED" stroke-dasharray="7 18">
+      <animateTransform attributeName="transform" type="rotate" from="0 932 230" to="360 932 230" dur="28s" repeatCount="indefinite"/>
+    </ellipse>
+    <circle cx="1148" cy="145" r="4" fill="#20C5FF" filter="url(#glow)"/>
+    <circle cx="716" cy="326" r="4" fill="#A855F7" filter="url(#glow)"/>
+  </g>
+
+  <g clip-path="url(#cardClip)">
+    <rect x="730" y="65" width="405" height="330" rx="22" fill="#0A0F1C" fill-opacity="0.96" stroke="url(#neon)" stroke-width="2"/>
+    <rect x="730" y="65" width="405" height="51" fill="#161B22"/>
+    <circle cx="758" cy="90" r="6" fill="#FF5F57"/>
+    <circle cx="780" cy="90" r="6" fill="#FEBC2E"/>
+    <circle cx="802" cy="90" r="6" fill="#28C840"/>
+    <text x="932" y="96" text-anchor="middle" fill="#8B949E" font-family="Consolas, monospace" font-size="13">profile.ts</text>
+
+    <rect x="730" y="116" width="405" height="2" fill="url(#neon)" opacity="0.6"/>
+    <rect x="731" y="118" width="403" height="44" fill="url(#neon)" opacity="0.055">
+      <animate attributeName="y" values="118;350;118" dur="5s" repeatCount="indefinite"/>
+    </rect>
+
+    <g font-family="Consolas, 'Courier New', monospace" font-size="16">
+      <g fill="#484F58" text-anchor="end">
+        <text x="765" y="151">01</text><text x="765" y="187">02</text><text x="765" y="223">03</text>
+        <text x="765" y="259">04</text><text x="765" y="295">05</text><text x="765" y="344">06</text>
+      </g>
+
+      <g opacity="0">
+        <text x="785" y="151" fill="#C084FC">const <tspan fill="#79C0FF">developer</tspan> <tspan fill="#C9D1D9">= {</tspan></text>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="8s" repeatCount="indefinite"/>
+      </g>
+      <g opacity="0">
+        <text x="805" y="187" fill="#79C0FF">name: <tspan fill="#A5D6FF">"Oshada"</tspan><tspan fill="#C9D1D9">,</tspan></text>
+        <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.08;0.18;0.9;1" dur="8s" repeatCount="indefinite"/>
+      </g>
+      <g opacity="0">
+        <text x="805" y="223" fill="#79C0FF">role: <tspan fill="#A5D6FF">"Full-Stack Dev"</tspan><tspan fill="#C9D1D9">,</tspan></text>
+        <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.16;0.26;0.9;1" dur="8s" repeatCount="indefinite"/>
+      </g>
+      <g opacity="0">
+        <text x="805" y="259" fill="#79C0FF">mindset: <tspan fill="#7EE787">"Always learning"</tspan></text>
+        <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.24;0.34;0.9;1" dur="8s" repeatCount="indefinite"/>
+      </g>
+      <g opacity="0">
+        <text x="785" y="295" fill="#C9D1D9">};</text>
+        <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.32;0.42;0.9;1" dur="8s" repeatCount="indefinite"/>
+      </g>
+      <g opacity="0">
+        <text x="785" y="344" fill="#79C0FF">developer<tspan fill="#C9D1D9">.</tspan><tspan fill="#20C5FF">build</tspan><tspan fill="#C9D1D9">();</tspan></text>
+        <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.42;0.52;0.9;1" dur="8s" repeatCount="indefinite"/>
+      </g>
+      <rect x="918" y="329" width="10" height="20" rx="2" fill="#20C5FF" filter="url(#glow)">
+        <animate attributeName="opacity" values="1;1;0;0;1" dur="1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+
+  <circle r="3" fill="#20C5FF" filter="url(#glow)">
+    <animateMotion path="M585 45 C700 18 790 42 865 22 S1050 36 1138 24" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;0" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="2.5" fill="#C084FC" filter="url(#glow)">
+    <animateMotion path="M1110 430 C970 448 850 420 720 443 S470 420 350 444" dur="9s" begin="-4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;0" dur="9s" begin="-4s" repeatCount="indefinite"/>
+  </circle>
+</svg>
