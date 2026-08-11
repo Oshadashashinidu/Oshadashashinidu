@@ -28,21 +28,21 @@
 
 <img src="./profile/neon-divider.svg" width="100%" alt="" />
 
-## 👨‍💻 About Me
+## • About Me
 
 I’m **Oshada Shashinidu**, a Computer Engineering undergraduate at the **University of Peradeniya** with a passion for creating modern, practical, and user-friendly software.
 
 I enjoy the full journey from a rough idea to a polished product—planning the experience, writing clean code, solving the tricky parts, and refining the details that make an application feel great.
 
-- 🎓 Exploring the intersection of **engineering, software, and design**
-- 🚀 Building responsive **web development projects**
-- 🌱 Deepening my knowledge of **JavaScript, React, and UI/UX**
-- 💬 Happy to talk about **HTML, CSS, JavaScript, React, Python, and Java**
-- ⚡ Driven by curiosity, thoughtful design, and continuous improvement
+- Exploring the intersection of **engineering, software, and design**
+- Building responsive **web development projects**
+- Deepening my knowledge of **JavaScript, React, and UI/UX**
+- Happy to talk about **HTML, CSS, JavaScript, React, Python, and Java**
+- Driven by curiosity, thoughtful design, and continuous improvement
 
 <img src="./profile/neon-divider.svg" width="100%" alt="" />
 
-## 🎯 Current Focus
+## • Current Focus
 
 <div align="center">
 
@@ -57,7 +57,7 @@ I enjoy the full journey from a rough idea to a polished product—planning the 
 
 <img src="./profile/neon-divider.svg" width="100%" alt="" />
 
-## 🧰 Technology Toolbox
+## • Technology Toolbox
 
 <div align="center">
 
@@ -85,40 +85,24 @@ I enjoy the full journey from a rough idea to a polished product—planning the 
 
 <img src="./profile/neon-divider.svg" width="100%" alt="" />
 
-## 📊 GitHub Analytics
+## • GitHub Analytics
 
 <p align="center">
   <img src="./profile/total-contributions.svg" width="86%" alt="Oshada's total GitHub contributions" />
 </p>
 
-<p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Oshadashashinidu&amp;layout=compact&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0D1117&amp;title_color=20C5FF&amp;text_color=C9D1D9&amp;icon_color=A855F7"
-    width="44%"
-    alt="Oshada's most-used languages"
-  />
-  <img
-    src="https://streak-stats.demolab.com?user=Oshadashashinidu&amp;theme=tokyonight&amp;hide_border=true&amp;background=0D1117&amp;ring=20C5FF&amp;fire=A855F7&amp;currStreakLabel=20C5FF"
-    width="49%"
-    alt="Oshada's GitHub contribution streak"
-  />
-</p>
+### Profile Highlights
 
-### Contribution Journey
-
-<p align="center">
-  <img
-    src="https://github-readme-activity-graph.vercel.app/graph?username=Oshadashashinidu&amp;bg_color=0D1117&amp;color=8B949E&amp;line=20C5FF&amp;point=A855F7&amp;area=true&amp;area_color=7C3AED&amp;hide_border=true&amp;custom_title=Oshada's%20Contribution%20Graph"
-    width="100%"
-    alt="Oshada's GitHub contribution activity graph"
-  />
-</p>
+- **Primary languages:** HTML, CSS, JavaScript, Python, and Java
+- **Main framework:** React
+- **Current direction:** Full-stack development and responsive web applications
+- **Contribution activity:** [View my contribution history on GitHub](https://github.com/Oshadashashinidu?tab=overview)
 
 <p align="center"><sub>Contribution totals are refreshed automatically every 6 hours with GitHub Actions.</sub></p>
 
 <img src="./profile/neon-divider.svg" width="100%" alt="" />
 
-## 🤝 Let’s Connect
+## • Let’s Connect
 
 <p align="center">
   I’m always glad to meet fellow developers, exchange ideas, and explore meaningful collaborations.
